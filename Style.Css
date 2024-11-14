@@ -1,0 +1,467 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda+One&family=Nunito:wght@200;300;400;600&display=swap');
+
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+}
+
+/* Header styling */
+.header {
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.header .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .logo img {
+    height: 50px;
+}
+
+.header .navbar a {
+    margin: 0 15px;
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.header .navbar a:hover {
+    color: #007BFF;
+}
+
+#menu-btn {
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Home section styling */
+.home-bg {
+    margin-top: 70px; /* Space for fixed header */
+    background: url('https://media.istockphoto.com/id/545095864/photo/woman-drinking-coffee-early-in-the-morning.webp?b=1&s=170667a&w=0&k=20&c=Gn18IupPUyJpSyV1liXwEI_TobefzUsFCB9c5KSkOTA=') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+}
+
+.home .content {
+    position: relative;
+}
+
+.home .content .text-overlay {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.home .content img {
+    display: none;
+}
+
+.home .content h3 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.home .content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.home .content .btn {
+    background: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.home .content .btn:hover {
+    background: #0056b3;
+}
+
+/* About section styling */
+.About {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px 20px;
+    background: #fff;
+}
+
+.About .img img {
+    max-width: 500px;
+    width: 100%;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.About .content {
+    max-width: 500px;
+    margin: 20px;
+}
+
+.About .content h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.About .content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.About .content .btn {
+    background: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.About .content .btn:hover {
+    background: #0056b3;
+}
+
+/* Facility and Menu sections styling */
+.Facility .Heading, .Menu .Heading, .Gallery .Heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.Facility .Heading img, .Menu .Heading img, .Gallery .Heading img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.Facility .Heading h3, .Menu .Heading h3, .Gallery .Heading h3 {
+    font-size: 28px;
+    color: #333;
+}
+
+.Facility .box-container, .Menu .box-container, .Gallery .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.Facility .box, .Menu .box {
+    background: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    width: 250px;
+    transition: transform 0.3s ease;
+}
+
+.Facility .box:hover, .Menu .box:hover {
+    transform: translateY(-10px);
+}
+
+.Facility .box img, .Menu .box img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.Facility .box h3, .Menu .box h3 {
+    font-size: 22px;
+    color: #333;
+    margin: 20px 0 10px;
+}
+
+.Facility .box p, .Menu .box p {
+    font-size: 16px;
+    color: #777;
+}
+
+/* Gallery section styling */
+.Gallery .Heading {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.Gallery .Heading img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.Gallery .Heading h3 {
+    font-size: 28px;
+    color: #333;
+}
+
+.Gallery .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+.Gallery .image-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.Gallery .image-row img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Custom properties */
+:root {
+    --white: #fff;
+    --black: #333;
+    --border: 1px solid #ddd;
+    --box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    --light-color: #777;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .header .navbar {
+        display: none;
+    }
+
+    #menu-btn {
+        display: block;
+    }
+
+    .home .content h3 {
+        font-size: 28px;
+    }
+
+    .home .content p {
+        font-size: 16px;
+    }
+
+    .About {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .About .content {
+        margin-top: 0;
+    }
+
+    .Facility .box, .Menu .box, .Gallery .box {
+        width: 100%;
+    }
+
+    .Gallery .image-row {
+        flex-direction: column;
+    }
+
+    .Gallery .image-row img {
+        width: 100%;
+    }
+}
+
+.Team {
+    padding: 50px 20px;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.Team .Heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.Team .Heading .logo {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.Team .Heading .stylish-heading {
+    font-size: 28px;
+    color: #333;
+}
+
+.Team .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.Team .box {
+    background: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    width: 250px;
+    transition: transform 0.3s ease;
+}
+
+.Team .box:hover {
+    transform: translateY(-10px);
+}
+
+.Team .box img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.Team .box h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.Contact {
+    padding: 50px 20px;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.Contact .Heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.Contact .Heading .logo {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.Contact .Heading .stylish-heading {
+    font-size: 28px;
+    color: #333;
+}
+
+.Contact .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.Contact .image {
+    flex: 1;
+    max-width: 300px;
+    margin-right: 20px;
+}
+
+.Contact .image img {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.Contact .contact-form {
+    flex: 1;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Contact .box {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.Contact .btn {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.Contact .btn:hover {
+    background-color: #0056b3;
+}
+
+/* Footer Section Styles */
+.footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer .box {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+    text-align: center;
+}
+
+.footer .box i {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.footer .box h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer .box p {
+    font-size: 16px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .footer .container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
